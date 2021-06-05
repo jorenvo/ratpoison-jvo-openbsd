@@ -14,8 +14,8 @@ PERMIT_PACKAGE=	Yes
 
 WANTLIB += X11 Xft Xrandr Xtst c
 
-# https://github.com/jorenvo/ratpoison/archive/refs/tags/1.4.10-beta-jvo-1.tar.gz
-MASTER_SITES=		https://github.com/jorenvo/ratpoison/archive/refs/tags/${V}
+# https://github.com/jorenvo/ratpoison/archive/refs/tags/ratpoison-1.4.10-beta-jvo-1.tar.gz
+MASTER_SITES=		https://github.com/jorenvo/ratpoison/archive/refs/tags/
 EXTRACT_SUFFIX=		.tar.gz
 
 # DEBUG_PACKAGES=		${BUILD_PACKAGES}
