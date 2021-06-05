@@ -1,23 +1,24 @@
-# $OpenBSD: Makefile,v 1.37 2020/03/22 01:05:54 jca Exp $
-
 COMMENT=	minimal wm based on GNU screen
 
-DISTNAME=	ratpoison-1.4.9
+V=		1.4.10-beta-jvo-1
+DISTNAME=	ratpoison-${V}
 REVISION=	1
 
 CATEGORIES=	x11
 HOMEPAGE=	https://www.nongnu.org/ratpoison/
 
-MAINTAINER=	Jeremie Courreges-Anglas <jca@wxcvbn.org>
+MAINTAINER=	Joren Van Onder <joren@jvo.sh>
 
 # GPLv2
 PERMIT_PACKAGE=	Yes
 
 WANTLIB += X11 Xft Xrandr Xtst c
 
-MASTER_SITES=		${MASTER_SITE_SAVANNAH:=ratpoison/}
+# https://github.com/jorenvo/ratpoison/archive/refs/tags/1.4.10-beta-jvo-1.tar.gz
+MASTER_SITES=		https://github.com/jorenvo/ratpoison/archive/refs/tags/${V}
+EXTRACT_SUFFIX=		.tar.gz
 
-DEBUG_PACKAGES=		${BUILD_PACKAGES}
+# DEBUG_PACKAGES=		${BUILD_PACKAGES}
 
 SEPARATE_BUILD=		Yes
 CONFIGURE_STYLE=	gnu
