@@ -1,8 +1,7 @@
 COMMENT=	minimal wm based on GNU screen
 
-V=		1.4.10-beta-jvo-1
-DISTNAME=	ratpoison-${V}
-REVISION=	1
+DISTNAME=	ratpoison-1.4.10-beta-jvo-1
+REVISION=	0
 
 CATEGORIES=	x11
 HOMEPAGE=	https://www.nongnu.org/ratpoison/
@@ -12,11 +11,11 @@ MAINTAINER=	Joren Van Onder <joren@jvo.sh>
 # GPLv2
 PERMIT_PACKAGE=	Yes
 
-WANTLIB += X11 Xft Xrandr Xtst c
+WANTLIB += 	X11 Xft Xrandr Xtst c
 
-# https://github.com/jorenvo/ratpoison/archive/refs/tags/ratpoison-1.4.10-beta-jvo-1.tar.gz
-MASTER_SITES=		https://github.com/jorenvo/ratpoison/archive/refs/tags/
-EXTRACT_SUFFIX=		.tar.gz
+GH_ACCOUNT=	jorenvo
+GH_PROJECT=	ratpoison
+GH_COMMIT=	4adde2cb7a4cd4f888d390009ccf33a1d1a3dacf
 
 # DEBUG_PACKAGES=		${BUILD_PACKAGES}
 
