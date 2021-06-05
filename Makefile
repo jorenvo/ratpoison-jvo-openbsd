@@ -20,7 +20,8 @@ GH_COMMIT=	4adde2cb7a4cd4f888d390009ccf33a1d1a3dacf
 # DEBUG_PACKAGES=		${BUILD_PACKAGES}
 
 SEPARATE_BUILD=		Yes
-CONFIGURE_STYLE=	gnu
+CONFIGURE_STYLE=	autoreconf gnu
+AUTORECONF=		autogen.sh
 CONFIGURE_ARGS+=	--with-xterm=${X11BASE}/bin/xterm
 
 .include <bsd.port.mk>
