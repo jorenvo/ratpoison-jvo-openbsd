@@ -21,7 +21,9 @@ GH_COMMIT=	4adde2cb7a4cd4f888d390009ccf33a1d1a3dacf
 
 SEPARATE_BUILD=		Yes
 CONFIGURE_STYLE=	autoreconf gnu
-AUTORECONF=		autogen.sh
+AUTORECONF=		./autogen.sh
+AUTOCONF_VERSION=	2.69
+AUTOMAKE_VERSION=	1.15
 CONFIGURE_ARGS+=	--with-xterm=${X11BASE}/bin/xterm
 
 .include <bsd.port.mk>
