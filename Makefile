@@ -1,7 +1,7 @@
 COMMENT=	minimal wm based on GNU screen
 
 DISTNAME=	ratpoison-jvo-1.4.10
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	x11
 HOMEPAGE=	https://www.nongnu.org/ratpoison/
@@ -15,7 +15,7 @@ WANTLIB += 	X11 Xft Xrandr Xtst c
 
 GH_ACCOUNT=	jorenvo
 GH_PROJECT=	ratpoison
-GH_COMMIT=	56e6273a867a8c1755bfe3fae8da837694e0dd03
+GH_COMMIT=	137d802d00f4f2846bd3e4ec86e628a7d47794c3
 
 # DEBUG_PACKAGES=		${BUILD_PACKAGES}
 
